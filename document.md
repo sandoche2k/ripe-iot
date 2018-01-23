@@ -1,7 +1,9 @@
 # Role of identifiers, addressing and service disocovery in IoT
+
 Test
 
 ## Introduction 
+
 Test
 
 ## Basic terminologies
@@ -17,4 +19,5 @@ Address
 Service discovery 
 
 ## References
+
 [WG-RIPE] https://www.ripe.net/participate/ripe/wg/iot
