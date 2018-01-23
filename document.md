@@ -1,10 +1,10 @@
 # Role of identifiers, addressing and service disocovery in IoT
 
 
-# Introduction 
+## Introduction 
 
 
-# Basic terminologies
+## Basic terminologies
 
 <a name="Naming convention"></a> : is a set of rules defined for constituting an identifier. 
 
@@ -16,5 +16,5 @@ Address
 
 Service discovery 
 
-# References
+## References
 [WG-RIPE] https://www.ripe.net/participate/ripe/wg/iot
