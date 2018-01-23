@@ -1,7 +1,4 @@
-# Installation
-
-
-## Role of identifiers, addressing and service disocovery in IoT
+# Role of identifiers, addressing and service disocovery in IoT
 
 Test
 
