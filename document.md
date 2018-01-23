@@ -6,9 +6,9 @@
 
 ## Basic Terminologies 
 
-### <a name="Naming convention"></a> : is a set of rules defined for constituting an identifier. 
+Naming convention : is a set of rules defined for constituting an identifier. For e.g. domain name has a specific naming convention as explained in [RFC1035](https://tools.ietf.org/html/rfc1035) 
 
-Identity : is something which is definable and recognisable. It need not be unique in a specific scope. A classic identity example is a person's name. It does not need to follow a specific [naming convention](#Naming convention). 
+Identity : is something which is definable and recognisable. It need not be unique in a specific scope. A classic identity example is a person's name. It does not need to follow a specific *naming convention*. 
 
 Identifier : 
 
@@ -16,6 +16,3 @@ Address
 
 Service discovery 
 
-## References
-
-[WG-RIPE] https://www.ripe.net/participate/ripe/wg/iot
