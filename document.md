@@ -80,6 +80,7 @@ names for identifying a "thing". The following subsection shows two different
 manners how IoT identifiers are structured:
 
 ### Hierarchical identifier use-case in IoT
+### Flat use-case in IoT
 
 The first use-case is the identifier used in the supply chain market. The term
 IoT was actually coined by this industry. The industry has been there well
@@ -100,8 +101,7 @@ The figure ![alt text](https://github.com/sandoche2k/ripe-iot/blob/master/images
 shows an example of a barcode attached to a product which has been produced in
 France. This barcode is unique withing the GS1 namespace. 
 
-## Flat use-case in IoT
-## Flat use-case in IoT
+### Flat use-case in IoT
 
 UDID (Unique Device Identifier) is a unique serial number assigned to each Apple
 manufactured device. It is a 40-character alphanumeric string of code as
