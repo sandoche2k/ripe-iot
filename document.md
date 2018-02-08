@@ -95,6 +95,9 @@ France, there is GS1 France). Each Contry is allocated a batch or a single three
 digit number. For e.g. all consumer products which has the EPC that starts
 between 300 - 375, means it has been produced in France. 
 
+The figure ![alt text](https://github.com/sandoche2k/ripe-iot/blob/master/images/Bar-code.png)
+shows an example of a product which has been produced in France. 
+
 Many of
 the markets which are getting 
 
