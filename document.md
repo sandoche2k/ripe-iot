@@ -102,7 +102,7 @@ shows an example of a barcode attached to a product which has been produced in
 France. This barcode is unique withing the GS1 namespace. 
 
 
-### Case Study 2:  Flat use-case in IoT
+### Flat use-case in IoT
 
 UDID (Unique Device Identifier) is a unique serial number assigned to each Apple
 manufactured device. It is a 40-character alphanumeric string of code as
@@ -115,7 +115,7 @@ follows:
 UDID is used by Apple to track and record the Apple manufactured devices. It is
 not hierarchical. The UDID is unique within the Apple UDID namespace. 
 
-## Problem statement
+## Problem statement
 
 The question that arises is how to integrate the different identifiers (either
 flat or hierarchical) in to the Internet scope?
