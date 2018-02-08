@@ -178,5 +178,5 @@ obliged to be part of the *Internet naming namespace.*
 
 Thus numbering and naming community will play an important role in the IoT. And,
 it seems the upper echelons of both the numbering and naming community had
-foreseen this by signing [MoU
+foreseen this by signing an [MoU
 recently](https://www.ripe.net/publications/news/announcements/ripe-ncc-and-centr-sign-mou)
