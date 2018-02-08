@@ -141,7 +141,7 @@ follows:
 ```sh
 3.1.3.1.6.2.3.3.9.3.4.0.3.gs1. (supposing that there is a TLD called 'gs1')
 ``` 
-Provisioning both identifiers (discussed as use-cases above) the barcode and the
+Provisioning both identifiers (discussed as use-cases above); the barcode and the
 UDID could be included into the Internet via the DNS namespace as follows:
 
 ```sh
@@ -164,15 +164,19 @@ Then it is upto the client libraries to make the conversion and add the
 sub-domain with respect to the identifiers. 
 
 
-## Role for RIPE in the IoT 
+## Role for RIPE in the IoT domain
+
+Since IoT is the Internet, with additional things associated with carrier
+devices wanting to be interconnected, RIPE will play the same role as it does in
+the Internet today. 
 
 Many and many IoT applications and services will require the necessity to
 interoperate. Some of them will see the advantages of migrating to IPv6, wherein
 RIPE will play a role. Other well established industries (such as the Wal-mart
 example described before) will use their existing identifiers, but will be
-obliged to be part of the Internet naming namespace. 
+obliged to be part of the *Internet naming namespace.* 
 
 Thus numbering and naming community will play an important role in the IoT. And,
-it seems the upper echelons of both the numbering and naming community which has
-signed an [MoU
+it seems the upper echelons of both the numbering and naming community had
+foreseen this by signing [MoU
 recently](https://www.ripe.net/publications/news/announcements/ripe-ncc-and-centr-sign-mou)
