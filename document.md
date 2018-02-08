@@ -48,7 +48,7 @@ In the Internet, domain names, URI, IP addresses and DNS forms the corner stone
 for identification/addressing and discovering associated data/devices related to
 the identifier. 
 
-## Problem statements
+## Problem statement
 
 Currently we have plethora of IoT technologies. Each using its own set of
 identifiers, naming conventions, namespaces and process of discovering. The
@@ -61,8 +61,43 @@ also not possible. The reason, being each of the IoT technologies satisfies a
 niche market. The task of interoperating with different technologies is possibly
 taken care by gateways, which acts as a bridge.
 
-The issue then arises is that, how to uniquely identify a thing. Provisioning of
-identifiers in the IoT field is not well regulated as in the Internet. In the
-Internet, domain names and IP addresses have their own namespaces and managed in
-a hierarchical distributed manner.    
+The issue then arises is that, how to provision an identifier uniquely for a
+thing in the Internet (which includes the IoT scope)? Provisioning of
+identifiers in the IoT field is not well regulated as in the Internet. 
+
+In the Internet, domain names and IP addresses have their own namespaces and are
+managed in a hierarchical distributed manner. For e.g. for the IP addresses,
+IANA allocates address space to RIRs (Regional Internet Registries), which in
+turn distributes the allocated address space to LIRs (Local Internet
+Registries), which in turn distributes to the end-users. Similarly for domain
+names, we have ICANN, ccTLDs (country code Top Level Domains), gTLDs (generic
+Top Level Domains) and then finally to the end-user. This manner of hierarhical
+management makes sure that there is no duplicity and a particular IP address or
+domain name is unique in the global Internet scope. 
+
+The so called IoT use cases do not use either IP addresses or domain names for
+identifying the "thing". 
+
+### Case Study 1:  IoT use-cases wherein the identifier is neither IP or URI
+
+The first use-case is the identifier used in the supply chain market. The term
+IoT was actually coined by this industry. The industry has been there well
+before the Internet, and once the Internet has gained popularity, they wanted to
+leverage the benefits of the Internet. 
+
+EPC (Electronic Product Code) is the naming convention they use. The
+barcodes attached to all the objects (e.g. water bottles, food items)  in the
+consulmer market all follow the EPC naming convention. The organisation which
+manages the allocation of EPC is called GS1. Their manamgement hierachy is
+similar to IP or domain namespace allocation. There is GS1 global (like ICANN or
+IANA) and there is one GS1 for most of the Countries in the world (For e.g. for
+France, there is GS1 France). Each Contry is allocated a batch or a single three
+digit number. For e.g. all consumer products which has the EPC that starts
+between 300 - 375, means it has been produced in France. 
+
+Many of
+the markets which are getting 
+
+
+
   
