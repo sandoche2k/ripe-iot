@@ -79,8 +79,7 @@ Most of the so called IoT use cases does not use either IP addresses or domain
 names for identifying a "thing". The following subsection shows two different
 manners how IoT identifiers are structured:
 
-### Hierarchical identifier use-case in IoT
-### Flat use-case in IoT
+### Hierarchical use-case in IoT
 
 The first use-case is the identifier used in the supply chain market. The term
 IoT was actually coined by this industry. The industry has been there well
