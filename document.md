@@ -101,6 +101,7 @@ shows an example of a barcode attached to a product which has been produced in
 France. This barcode is unique withing the GS1 namespace. 
 
 ## Flat use-case in IoT
+## Flat use-case in IoT
 
 UDID (Unique Device Identifier) is a unique serial number assigned to each Apple
 manufactured device. It is a 40-character alphanumeric string of code as
