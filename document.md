@@ -18,8 +18,8 @@ ToDo) identifier. It is used to identify an entity individually. It need to be
 identifier will be the unique handle for the entity and will not change.
 
 **Address :** is an identifier for the entity with an objective to communicate
-with the entity such as MACID, IP addresses etc. It need to be *unique* within a
-specific scope and should follow a specific *naming convention*.
+such as MACID, IP addresses etc. It need to be *unique* within a specific scope
+and should follow a specific *naming convention*.
 
 **Service discovery :** a mechanism to relate an unique identifier to its
 corresponding information. In the IoT paradigm, the service discovery could be
@@ -29,7 +29,7 @@ metadata or a related service.
 
 ## Introduction 
 
-There are sevaral definitions for IoT. In a nutshell, "IoT" is the Internet. In
+There are several definitions for IoT. In a nutshell, "IoT" is the Internet. In
 the Internet, we have communication entities (devices) interconnected, such as
 computer, mobile phones, routers etc. The IoT tries to go a step further and
 interconnect all sorts of entities (things), such as human, cattle, bricks etc.
@@ -41,7 +41,7 @@ device such as SIM card.
 
 The approach should be integrating the IoT entities to the Internet, which has
 been operational for last thirty years. This is the reason, why all entities
-whom have been part of the Internet eco-system, will also be part of the IoT
+whom have been part of the Internet ecosystem, will also be part of the IoT
 ecosystem. 
 
 In the Internet, domain names, URI, IP addresses and DNS forms the corner stone
@@ -71,7 +71,7 @@ IANA allocates address space to RIRs (Regional Internet Registries), which in
 turn distributes the allocated address space to LIRs (Local Internet
 Registries), which in turn distributes to the end-users. Similarly for domain
 names, we have ICANN, ccTLDs (country code Top Level Domains), gTLDs (generic
-Top Level Domains) and then finally to the end-user. This manner of hierarhical
+Top Level Domains) and then finally to the end-user. This manner of hierarchical
 management makes sure that there is no duplicity and a particular IP address or
 domain name is unique in the global Internet scope. 
 
@@ -89,7 +89,7 @@ leverage the benefits of the Internet.
 EPC (Electronic Product Code) is the naming convention they use. The
 barcodes attached to all the objects (e.g. water bottles, food items)  in the
 consumer market follow the EPC naming convention. The organisation which
-manages the allocation of EPC is called GS1. Their manamgement hierachy is
+manages the allocation of EPC is called GS1. Their management hierarchy is
 similar to IP or domain namespace allocation. There is GS1 global (like ICANN or
 IANA) and there is one GS1 for most of the Countries in the world (For e.g. for
 France, there is GS1 France). Each Country is allocated a batch or a single three
@@ -132,8 +132,8 @@ that industries which has been using their own identifiers for a while are
 reluctant to migrate to a new identifier. Just imagine, asking Wal-mart to put
 IPv6 identifiers instead of barcode for identifying consumer goods.
 
-Another possibility is to covnert the existing identifier (either flat or
-hierarhical) into a FQDN (Fully Qualified Domain Name) and then creating their
+Another possibility is to convert the existing identifier (either flat or
+hierarchical) into a FQDN (Fully Qualified Domain Name) and then creating their
 own namespace in the Internet. 
 
 For e.g. the barcode in the figure above could be converted to a domain name as
@@ -171,7 +171,7 @@ Many and many IoT applications and services will require the necessity to
 interoperate. Some of them will see the advantages of migrating to IPv6, wherein
 RIPE will play a role. Other well established industries (such as the Wal-mart
 example described before) will use their existing identifiers, but will be
-oblidged to be part of the Internet naming namespace. 
+obliged to be part of the Internet naming namespace. 
 
 Thus numbering and naming community will play an important role in the IoT. And,
 it seems the upper echelons of both the numbering and naming community which has
