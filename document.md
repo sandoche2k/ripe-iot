@@ -156,7 +156,10 @@ UDID could be included into the Internet via the DNS namespace as follows:
 	  4.0.3	      UDID      
             /          \
            /            \
-     6.2.3.3.9.3. 
+     6.2.3.3.9.3.     2b6f0cc904d137be2e1730235f5664094b831186 
+	  /
+	 /
+      3.1.3.1
 ```
 Then it is upto the client libraries to make the conversion and add the
 sub-domain with respect to the identifiers. 
@@ -164,3 +167,13 @@ sub-domain with respect to the identifiers.
 
 ## Role for RIPE in the IoT 
 
+Many and many IoT applications and services will require the necessity to
+interoperate. Some of them will see the advantages of migrating to IPv6, wherein
+RIPE will play a role. Other well established industries (such as the Wal-mart
+example described before) will use their existing identifiers, but will be
+oblidged to be part of the Internet naming namespace. 
+
+Thus numbering and naming community will play an important role in the IoT. And,
+it seems the upper echelons of both the numbering and naming community which has
+signed an [MoU
+recently](https://www.ripe.net/publications/news/announcements/ripe-ncc-and-centr-sign-mou)
