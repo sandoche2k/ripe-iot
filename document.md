@@ -135,12 +135,6 @@ Another possibility is to convert the existing identifier (either flat or
 hierarchical) into a FQDN (Fully Qualified Domain Name) and then creating their
 own namespace in the Internet. 
 
-For e.g. the barcode in the figure above could be converted to a domain name as
-follows: 
-
-```sh
-3.1.3.1.6.2.3.3.9.3.4.0.3.gs1. (supposing that there is a TLD called 'gs1')
-``` 
 Provisioning both identifiers (discussed as use-cases above); the barcode and the
 UDID could be included into the Internet via the DNS namespace as follows:
 
@@ -160,8 +154,17 @@ UDID could be included into the Internet via the DNS namespace as follows:
 	 /
       3.1.3.1
 ```
+
 Then it is upto the client libraries to make the conversion and add the
-sub-domain with respect to the identifiers. 
+sub-domain with respect to the identifiers. Once the identifier is converted to
+a FQDN as follows : 
+
+```sh
+2b6f0cc904d137be2e1730235f5664094b83118.udid.apple. 
+3.1.3.1.6.2.3.3.9.3.4.0.3.gs1. (supposing that there is a TLD called 'gs1')
+```
+they will follow the normal DNS resolution to resolve to its associated
+resource/device/metadata. 
 
 
 ## Role for RIPE in the IoT domain
