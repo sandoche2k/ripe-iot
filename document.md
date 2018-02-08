@@ -48,7 +48,7 @@ In the Internet, domain names, URI, IP addresses and DNS forms the corner stone
 for identification/addressing and discovering associated data/devices related to
 the identifier. 
 
-## Problem statement
+## Preambule
 
 Currently we have plethora of IoT technologies. Each using its own set of
 identifiers, naming conventions, namespaces and process of discovering. The
@@ -75,10 +75,11 @@ Top Level Domains) and then finally to the end-user. This manner of hierarhical
 management makes sure that there is no duplicity and a particular IP address or
 domain name is unique in the global Internet scope. 
 
-The so called IoT use cases do not use either IP addresses or domain names for
-identifying the "thing". 
+Most of the so called IoT use cases does not use either IP addresses or domain
+names for identifying a "thing". The following subsection shows two different
+manners how IoT identifiers are structured:
 
-### Case Study 1:  IoT use-cases wherein the identifier is neither IP or URI
+### Hierarchical identifier use-case in IoT
 
 The first use-case is the identifier used in the supply chain market. The term
 IoT was actually coined by this industry. The industry has been there well
@@ -87,20 +88,79 @@ leverage the benefits of the Internet.
 
 EPC (Electronic Product Code) is the naming convention they use. The
 barcodes attached to all the objects (e.g. water bottles, food items)  in the
-consulmer market all follow the EPC naming convention. The organisation which
+consumer market follow the EPC naming convention. The organisation which
 manages the allocation of EPC is called GS1. Their manamgement hierachy is
 similar to IP or domain namespace allocation. There is GS1 global (like ICANN or
 IANA) and there is one GS1 for most of the Countries in the world (For e.g. for
-France, there is GS1 France). Each Contry is allocated a batch or a single three
+France, there is GS1 France). Each Country is allocated a batch or a single three
 digit number. For e.g. all consumer products which has the EPC that starts
 between 300 - 375, means it has been produced in France. 
 
 The figure ![alt text](https://github.com/sandoche2k/ripe-iot/blob/master/images/Bar-code.png)
-shows an example of a product which has been produced in France. 
-
-Many of
-the markets which are getting 
+shows an example of a barcode attached to a product which has been produced in
+France. This barcode is unique withing the GS1 namespace. 
 
 
+### Case Study 2:  Flat use-case in IoT
 
-  
+UDID (Unique Device Identifier) is a unique serial number assigned to each Apple
+manufactured device. It is a 40-character alphanumeric string of code as
+follows:
+
+```sh
+2b6f0cc904d137be2e1730235f5664094b831186
+```
+
+UDID is used by Apple to track and record the Apple manufactured devices. It is
+not hierarchical. The UDID is unique within the Apple UDID namespace. 
+
+## Problem statement
+
+The question that arises is how to integrate the different identifiers (either
+flat or hierarchical) in to the Internet scope?
+
+Two possible solutions seem to be :
+   * Migrate all identifiers in IoT to use IPv6 addresses. 
+   * Create a specific namespace in the Internet for each particular IoT usage.
+
+The IETF (Internet Engineering Task Force) has been working for a while via
+various IoT
+[Working
+Groups](https://www.internetsociety.org/blog/2017/07/rough-guide-to-ietf-99-internet-of-things/)
+to make it possible to use IPv6 in the IoT devices. The operational issue is
+that industries which has been using their own identifiers for a while are
+reluctant to migrate to a new identifier. Just imagine, asking Wal-mart to put
+IPv6 identifiers instead of barcode for identifying consumer goods.
+
+Another possibility is to covnert the existing identifier (either flat or
+hierarhical) into a FQDN (Fully Qualified Domain Name) and then creating their
+own namespace in the Internet. 
+
+For e.g. the barcode in the figure above could be converted to a domain name as
+follows: 
+
+```sh
+3.1.3.1.6.2.3.3.9.3.4.0.3.gs1. (supposing that there is a TLD called 'gs1')
+``` 
+Provisioning both identifiers (discussed as use-cases above) the barcode and the
+UDID could be included into the Internet via the DNS namespace as follows:
+
+```sh
+		.
+	       / \
+	      /   \
+	     /	   \ 	
+	    gs1    apple 
+	     /\      \	
+	    /  \      \
+	  4.0.3	      UDID      
+            /          \
+           /            \
+     6.2.3.3.9.3. 
+```
+Then it is upto the client libraries to make the conversion and add the
+sub-domain with respect to the identifiers. 
+
+
+## Role for RIPE in the IoT 
+
