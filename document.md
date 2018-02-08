@@ -17,8 +17,8 @@ ToDo) identifier. It is used to identify an entity individually. It need to be
 *unique* within a scope and should follow a specific *naming convention*. The
 identifier will be the unique handle for the entity and will not change.
 
-**Address :** is an identifier for the entity with an objective to communicate
-such as MACID, IP addresses etc. It need to be *unique* within a specific scope
+**Address :** is an identifier for the entity with an objective to communicate,
+such as MACID, IP addresses etc. It needs to be *unique* within a specific scope
 and should follow a specific *naming convention*.
 
 **Service discovery :** a mechanism to relate an unique identifier to its
@@ -78,6 +78,7 @@ domain name is unique in the global Internet scope.
 Most of the so called IoT use cases does not use either IP addresses or domain
 names for identifying a "thing". The following subsection shows two different
 manners how IoT identifiers are structured:
+
 
 ### Hierarchical identifier use-case in IoT
 
