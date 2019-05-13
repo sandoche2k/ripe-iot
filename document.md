@@ -1,5 +1,4 @@
 # Role of identifiers, addressing and service discovery in IoT
-# Test
 
 ## Basic Terminologies 
 
